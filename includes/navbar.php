@@ -4,7 +4,8 @@ $currentPath = basename($_SERVER['SCRIPT_NAME']);
 <header class="site-header">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent container-fluid py-3">
         <a class="navbar-brand" href="index.php" aria-label="Go to GDSG homepage" title="GDSG homepage">
-            <img src="<?php echo asset_url('logo.jpeg'); ?>" alt="GDSG logo">
+            <img src="<?php echo asset_url('assets/images/gdsg-globe-mark.png'); ?>" alt="GDSG logo">
+            <span class="navbar-brand-copy"><strong>GDSG</strong><small>Geospatial Data<br>Science Group</small></span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavbar" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,6 +18,7 @@ $currentPath = basename($_SERVER['SCRIPT_NAME']);
                 <li class="nav-item"><a class="nav-link<?php echo $currentPath === 'projects.php' ? ' active' : ''; ?>" href="projects.php">Projects</a></li>
                 <li class="nav-item"><a class="nav-link<?php echo $currentPath === 'publications.php' ? ' active' : ''; ?>" href="publications.php">Publications</a></li>
                 <li class="nav-item"><a class="nav-link<?php echo $currentPath === 'team.php' ? ' active' : ''; ?>" href="team.php">Team</a></li>
+                <li class="nav-item"><a class="nav-link<?php echo ($currentPath === 'blogs.php' || $currentPath === 'blog_detail.php') ? ' active' : ''; ?>" href="blogs.php">Blogs</a></li>
                 <li class="nav-item"><a class="nav-link<?php echo $currentPath === 'news.php' ? ' active' : ''; ?>" href="news.php">News</a></li>
             </ul>
             <a class="btn navbar-contact d-none d-lg-inline-flex" href="contact.php">Contact</a>
